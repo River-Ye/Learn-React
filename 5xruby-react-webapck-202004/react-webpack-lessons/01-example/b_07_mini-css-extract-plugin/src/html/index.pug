@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title webpack 4
+  body
+    h1#info milkmidi
+    h2=MY_DATA
+    .box box
+    img(src="~img/milkmidi.png")
+    img(src="~img/my.gif")
+    .info You have to make sure that the files that you import in the data configuration contain only SASS code that doesn't get rendered, such as variables, mixins and functions. Otherwise, that code will end up repeated for each component in the final post-processed css file.
+    if DEV_MODE
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+      script.
+        console.log(9528)

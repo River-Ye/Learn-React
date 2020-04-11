@@ -1,0 +1,48 @@
+{
+  "name": "milkmidi-webpack-example",
+  "version": "1.0.0",
+  "description": "webpack example",
+  "author": "milkmidi",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "rimraf ./dist && cross-env NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "pug-html-loader": "^1.1.5",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-decorators": "^7.7.0",
+    "@babel/preset-flow": "^7.0.0",
+    "cross-env": "^5.2.0",
+    "mobx": "^5.15.0",
+    "mobx-react": "^6.1.4",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "rimraf": "^3.0.0"
+  }
+}

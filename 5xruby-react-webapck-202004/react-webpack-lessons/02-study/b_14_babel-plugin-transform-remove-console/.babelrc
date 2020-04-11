@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "loose": true,
+        "targets": {
+          "browsers": [
+            "> 2%",
+            "last 2 versions",
+            "ie >= 11"
+          ]
+        }
+      }
+    ],
+    "@babel/preset-flow"
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-remove-console"
+      ]
+    }
+  }
+}

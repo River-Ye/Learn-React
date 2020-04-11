@@ -1,0 +1,3 @@
+放兩個 Counter Component
+一個 state.count 為 0
+另一個 state.count 為 1

@@ -1,0 +1,10 @@
+@mixin helloWorld($value) {
+  font-size: $value;
+}
+@mixin textOverflow($value) {
+  display: -webkit-box;
+  overflow :hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $value;
+  -webkit-box-orient: vertical;
+}

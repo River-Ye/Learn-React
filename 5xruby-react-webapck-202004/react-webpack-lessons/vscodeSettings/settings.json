@@ -1,0 +1,15 @@
+// 將您的設定放入此檔案中以覆寫預設值  
+{   
+  // 在未支援的語言中啟用 emmet  
+  "emmet.includeLanguages": {  
+    "javascript":"javascriptreact"
+  },
+  // eslint 相關  
+  "editor.codeActionsOnSave": {  
+    "source.fixAll.eslint": true  
+  },  
+  // 
+  "path-intellisense.mappings": {
+    "~img": "${workspaceRoot}/src/img/"
+  },
+}  

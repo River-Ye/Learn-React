@@ -1,0 +1,4 @@
+# 補充 – Constructor 變數縮寫
+- https://babeljs.io/docs/en/babel-plugin-proposal-class-properties
+
+- https://babeljs.io/repl#?browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=MYGwhgzhAECCAO9oFMAeAXZA7AJjASsmMOgHQDCA9gLbyVbbrQDeAUNNBOmJtALwt2HaMEoBXLOgBcABiEBfIaACWwANYAJMLhDIATgAoAlGw6KOK9bD17KAdwBiEksvpad-_tGN8AfKeF0AAtlCFIIZHQAZW5MAwDhEXFJKQBGOUT5IwUhPWwcfWME6Dz0MT0sbyFEgB4cZQA3EXAoADkwamQ-ACJqAE8AWlFaekZu32rE6BqAIzF0dHpoenIQVTU-ZmDQ0ktNbRxdPXlfACF5xawagHo5hfoJqeFZi6WVtfVN7bC961tHZzoVxYdyHfQnc73LAAJhud0ujye0yCqX833CsWQu2S6HkNxRiNq13qDUJ0GyZlYilYhGI6AAIgB5ACypDyuEKQhqCCQ118ABohDhKMAxJ1JKQAOaRACiunF6FOfQAkjgDAByMCIdXZIwAbiAA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2017%2Creact&prettier=false&targets=&version=7.8.7&externalPlugins=%40babel%2Fplugin-proposal-class-properties%407.5.5

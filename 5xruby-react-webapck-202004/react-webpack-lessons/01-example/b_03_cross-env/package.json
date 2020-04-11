@@ -1,0 +1,17 @@
+{
+  "name": "milkmidi-webpack",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack",
+    "start:watch": "cross-env NODE_ENV=development webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "cross-env": "^7.0.0"
+  },
+  "devDependencies": {}
+}

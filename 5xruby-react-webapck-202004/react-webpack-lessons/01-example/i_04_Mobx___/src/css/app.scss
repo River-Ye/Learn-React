@@ -1,0 +1,7 @@
+@import './theme.scss';
+
+.todo-item{
+  &.is-done{
+    text-decoration-line: line-through;
+  }
+}

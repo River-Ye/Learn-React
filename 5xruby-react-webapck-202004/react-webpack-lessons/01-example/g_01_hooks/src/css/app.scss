@@ -1,0 +1,20 @@
+button{
+  padding:8px;
+}
+
+.memo-btn{
+  position: relative;
+  &__redner-tip{
+    left: 0;
+    top: 0;
+    padding: 2px;
+    background-color:#e67e22;
+    height: 100%;
+    color:white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius:4px;
+    padding: 4px 6px;
+  }
+}

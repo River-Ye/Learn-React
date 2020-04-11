@@ -1,0 +1,23 @@
+#root , .app{
+  width: 100%;
+  min-height: 100vh;
+}
+.app{
+  color: black;
+  background-color:white;
+  &.dark{
+    background-color:black;
+    color: white;
+  }
+}
+
+h1 {
+  font-size: 40px;
+}
+.button{
+  font-size: 40px;
+  &--dark{
+    color: black;
+    background-color:red;
+  }
+}

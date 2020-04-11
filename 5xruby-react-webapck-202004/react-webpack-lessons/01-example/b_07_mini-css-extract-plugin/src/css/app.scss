@@ -1,0 +1,36 @@
+@if DEV_MODE {
+  body{
+    background-color:#dddddd;
+  }
+} 
+
+h1 {
+  color: red;
+  // color: black;
+}
+h1 {
+  font-size: 40px;
+  @include helloWorld('20px');
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-size: 100% auto;
+  background-image: url('~img/milkmidi.png');
+}
+.box{
+  padding: 0;
+  transform: translateX(10px);
+}
+.gif {
+  width: 100px;
+  height: 100px;
+  background-size: 100% auto;
+  background-image: url('~img/my.gif');
+}
+.info{
+  border: 2px solid black;
+  width: 200px;
+  line-height: 1;
+  @include textOverflow(3);
+}

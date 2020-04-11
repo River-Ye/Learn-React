@@ -1,0 +1,84 @@
+@import './theme.scss';
+
+body {
+  color: black;
+  background-color: #fff;
+  transition: background-color .3s;
+  &.dark{
+    color: white;
+    background-color:rgba(46, 49, 49, 1);
+  }
+}
+
+.app{
+  width: 460px;
+  padding: 0 10px;
+  font-family: 'Microsoft JhengHei';
+  margin: 10px auto;
+  &.dark{
+    background-color: #222222;
+  }
+}
+
+.todo-form {
+  text-align: center;
+  display: flex;
+  input {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Microsoft JhengHei';
+    color: #336;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.todo-items {
+  padding-left: 0;
+  list-style: none;
+  .todo-item {
+    border-bottom: 1px solid #ddd;
+    padding: 30px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .3s;
+    animation: show .3s ease-in-out;
+    &:first-child {
+      border-top: 1px solid #ddd;
+    }
+    
+    &:before {
+      vertical-align: middle;
+      margin-right: 24px;
+      content: url('~img/check0.png');
+    }
+    
+    &.done{
+      text-decoration: line-through;
+      color: #888;
+      background-color: #f6f6f6;
+      &:before {
+        content: url('~img/check1.png');
+      }
+    }    
+  }  
+}
+
+.button{
+  &.dark{
+    color: #ffffff;
+    background-color: #222222;
+  }
+}
