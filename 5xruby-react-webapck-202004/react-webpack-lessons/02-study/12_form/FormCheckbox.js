@@ -13,6 +13,9 @@ class FormCheckbox extends React.Component {
       .filter( ({checked}) => checked)
       .map( ({label}) => label);
     */
+    return this.state.checkbox
+      .filter( ({checked}) => checked)
+      .map( ({label}) => label);
   }
 
   checkboxChangeHandler = (e) => {
@@ -22,6 +25,10 @@ class FormCheckbox extends React.Component {
     newCheckboxArr[idx].checked = !newCheckboxArr[idx].checked;
     this.setState({ checkbox: newCheckboxArr });
     */
+    var idx = e.target.getAttribute('data-index') / 1;
+    var newCheckboxArr = this.state.checkbox.concat();
+    newCheckboxArr[idx].checked = !newCheckboxArr[idx].checked;
+    this.setState({ checkbox: newCheckboxArr });
   }
   render() {
     const { checkbox } = this.state;
@@ -47,5 +54,25 @@ class FormCheckbox extends React.Component {
       </section>
     );
     */
+    return (
+      <section>
+        <h4>FormCheckbox</h4>
+        <p>{JSON.stringify(this.getValue())}</p>
+        {
+          checkbox.map(({label,checked},index) => {
+            return (
+              <label key={label}>
+                <input
+                  data-index={index}
+                  type="checkbox"
+                  value={label}
+                  checked={checked}
+                  onChange={this.checkboxChangeHandler}
+                />{label}</label>
+            )
+          })
+        }
+      </section>
+    );
   }
 }

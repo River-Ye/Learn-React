@@ -1,6 +1,7 @@
 class ChildComponent extends React.Component {
   onClick =() =>{
     // this.props.onCallParent(new Date().toString());
+    this.props.onCallParent(new Date().toString());
   }
   render() {
     return (

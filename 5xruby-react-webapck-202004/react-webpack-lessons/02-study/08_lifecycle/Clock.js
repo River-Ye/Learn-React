@@ -13,6 +13,14 @@ class Clock extends React.Component {
       });
     }, 1000);
     */
+   this.timeId = setInterval(() => {
+     console.log('interval');
+     this.setState((state) => {
+       return {
+         count: state.count + 1
+       }
+     });
+   }, 1000);
   }
   componentWillUnmount() {
     console.log('componentWillUnmount');

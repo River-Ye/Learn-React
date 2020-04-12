@@ -9,10 +9,14 @@ class Counter extends React.Component {
       console.log('innerFunction', this); 
     }
     */
+   this.state = { count: 0 }
+   this.handleClickBinding = this.handleClickBinding.bind(this);
+   this.innerFunction = () => {
+     console.log('innerFunction', this);
+   }
     // TODO: 1 end
   }
   // TODO: 2 start
-  /*
   handleClickNoBinding(e){
     console.log('handleClickNoBinding', this);
   }
@@ -22,7 +26,6 @@ class Counter extends React.Component {
   handleClickClassFieldsSyntax = () => {
     console.log('handleClickClassFieldsSyntax', this);
   }
-  */
   // TODO: 2 end
   render () {
     return (

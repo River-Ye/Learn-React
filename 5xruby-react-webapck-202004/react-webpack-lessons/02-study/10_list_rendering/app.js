@@ -16,6 +16,16 @@ class List extends React.Component {
     })
   }
   */
+ state = {
+   list: ['學會 JS', '學會 React', '年薪百萬']
+ };
+ addClick = () => {
+   this.setState((state) => {
+     return {
+       list: state.list.concat(new Date().toString())
+     }
+   })
+ }
   // TODO: 1 end
   render(){
     // TODO: 2 start
@@ -33,6 +43,19 @@ class List extends React.Component {
       </div>
     )
     */
+   return (
+     <div>
+       <button onClick={this.addClick}>Add</button>
+       <ol className="list">
+         {
+           this.state.list.map(function (text) {
+            //  要塞唯一key值
+            return <li key={text}>{text}</li>;
+           })
+         }
+       </ol>
+     </div>
+   )
     // TODO: 2 end
   }
 }

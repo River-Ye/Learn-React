@@ -10,18 +10,18 @@ class TodoList extends React.Component {
   // TODO: 1 end
   // TODO: 2 start
   addItem = (text)=> {
-    /*
+    // /*
     var item = {
       id: new Date().getTime().toString(),
-      text,
+      text, // key value 一樣時，可寫成這樣
       done: false,
     };
     var list = this.state.list.concat(item);
     this.setState({ list });
-    */
+    // */
   }
   toggleItem = (id)=> {
-    /*
+    // /*
     var list = this.state.list.map((item)=> {
       if(item.id === id){
         return {
@@ -34,12 +34,12 @@ class TodoList extends React.Component {
     });
     
     this.setState({ list });
-    */
+    // */
   }
   // TODO: 2 end
   render () {
     // TODO: 3 start
-    /*
+    // /*
     return (
       <section data-name="TodoList.js">
         <div className="todo-list">
@@ -62,7 +62,7 @@ class TodoList extends React.Component {
         </div>
       </section>
     );
-    */
+    // */
     // TODO: 3 end
   }
 };
