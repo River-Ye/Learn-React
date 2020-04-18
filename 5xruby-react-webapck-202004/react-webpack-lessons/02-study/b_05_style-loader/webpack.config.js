@@ -17,7 +17,7 @@ module.exports = {
     // 可以加入這些目錄, 讓 webpack 自動尋找對的檔案
     modules: [
       path.resolve('src'),
-      path.resolve('node_modules'), // 這個一定要加
+      path.resolve('node_modules'), // 這個一定要加，沒加會找不到 src
     ],
   },
   module:{
@@ -30,7 +30,7 @@ module.exports = {
       /* 多 loader 組合
       寫法1
         可寫成一行，或是使用 use, 處理順序是由後往前, 舊寫法, 不推
-        loader: 'style-loader!css?sourceMap!sass-loader?sourceMap'
+        loader: 'style-loader!css-loader?sourceMap!sass-loader?sourceMap'
       寫法 2, 字串
         use: [
           'style-loader',
@@ -40,28 +40,28 @@ module.exports = {
       https://webpack.js.org/configuration/module/#rule-use
       */
       // TODO: 2 start
-      /* 
+      // /*
       {
         test: /\.scss$/,
         use: [
-          { loader: 'style-loader' },
+          { loader: 'style-loader' },     // 處理順序是從後往前
           { loader: 'css-loader' },
-          { loader: 'sass-loader' },
+          { loader: 'sass-loader' },      // 也可以處理 scss
         ],
-        include: path.resolve('src/css'),
+        include: path.resolve('src/css'), // 指定資料夾，會比較快些
       }, 
       // */
       // TODO: 2 end
       // TODO: 3 start
-      /* 
+      // /*
       {
         test: /\.(png|jpg|gif|svg|ico)$/,
         use: {
           loader: 'url-loader',
           options: {
-            limit: 2048, // 小於 2048 bytes(2k) 的圖檔, 自動變成 base64 字串
+            limit: 2048, // 小於 2048 bytes(2k) 的圖檔, 自動變成 base64 字串，尺寸大小沒有標準，單位是 bytes
             // 檔名： [資料夾][檔名].[副檔名]?[檔案的hash]
-            name: '[path][name].[ext]?[hash:10]',
+            name: '[path][name].[ext]?[hash:10]', // 長度不一定要是10，看需求
           },
         },
         include: path.resolve('src/img'),

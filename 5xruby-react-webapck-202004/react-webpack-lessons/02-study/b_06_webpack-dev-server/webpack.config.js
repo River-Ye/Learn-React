@@ -1,6 +1,6 @@
 const path = require('path');
 // TODO: 1
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const DEV_MODE = process.env.NODE_ENV === 'development';
 console.log(`DEV_MODE:${DEV_MODE}`);
@@ -14,7 +14,7 @@ module.exports = {
   devtool: DEV_MODE ? 'inline-source-map' : false,
   output: {
     // TODO: 1
-    // filename: DEV_MODE ? 'app.js' :  'app-[chunkhash].js',
+    filename: DEV_MODE ? 'app.js' :  'app-[chunkhash].js',
     path: path.resolve('dist'),
   },
   resolve: {
@@ -88,14 +88,17 @@ module.exports = {
   },
   plugins: [
     // TODO: 3
-    /* new HtmlWebpackPlugin({
+    // /*
+    new HtmlWebpackPlugin({
       template: './html/index.pug',
       filename: 'index.html'
-    }), */
+    }),
   ],
+  // */
   // TODO: 4 start
   devServer: {
-    /* // https://webpack.js.org/configuration/dev-server/#devserverhistoryapifallback
+    // /*
+    // https://webpack.js.org/configuration/dev-server/#devserverhistoryapifallback
     // HTML5 History API
     historyApiFallback: true,
     port: 3000,
@@ -103,7 +106,8 @@ module.exports = {
     // 可以用 ip 連線，預設是 localhost
     host: '0.0.0.0',
     // https://webpack.js.org/configuration/dev-server/#devserverstats-
-    stats: 'minimal' */
+    stats: 'minimal'
   },
+  // */
   // TODO: 4 end
 };

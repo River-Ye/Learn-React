@@ -104,7 +104,7 @@ module.exports = {
         DEF_BOO: true,
         DEF_NUM: 9527,
         DEF_OBJ: JSON.stringify({ obj: 'milkmidi' }),
-        // DEF_STR: "hi webpack",//這樣會有問題
+        // DEF_STR: "hi webpack",//這樣會有問題，會被轉成變數
         DEF_STR: JSON.stringify("我是中文字"),
         WEB_URL: JSON.stringify(DEV_MODE ? 'http://localhost' : 'http://milkmidi.com'),
       }

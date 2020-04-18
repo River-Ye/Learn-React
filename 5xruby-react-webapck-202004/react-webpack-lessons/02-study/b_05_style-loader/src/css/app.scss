@@ -2,7 +2,7 @@
   width: 150px;
   height: 150px;
   border: 1px solid red;
-  background-image: url('~img/milkmidi.png');
+  background-image: url('~img/milkmidi.png'); // ~ 是 webpack 提供的，遇到什麼副檔名用什麼 loader 處理， ~ 是給 webpack 看的，從 module 開始找，圖片檔都要 ~ 才會過 webpack loader
 }
 .apple{
   background-image:url('~img/apple.svg');

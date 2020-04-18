@@ -4,7 +4,7 @@ console.log('process.env.NODE_ENV', process.env.NODE_ENV);
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  context: path.resolve('src'),
+  context: path.resolve('src'), // 所有程式碼都從 .src 開始找
   entry: './index.js',
   // https://webpack.js.org/configuration/devtool/#devtool
   // 更換 sourcemap 的方式。
@@ -15,7 +15,8 @@ module.exports = {
   },
   module: { //https://webpack.js.org/configuration/module/
     // TODO: 1 start
-    /* rules: [
+    // /* 
+    rules: [
         {
         test: /\.(js|jsx)$/,
         use: {
@@ -26,7 +27,8 @@ module.exports = {
         // 排除文件，加速 webpack 打包
         exclude: /node_modules/,
       },
-    ] */
+    ]
+    // */
     // TODO: 1 end
   },
 };

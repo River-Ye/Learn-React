@@ -1,4 +1,4 @@
-@if DEV_MODE {
+@if $DEV_MODE {
   body{
     background-color:#dddddd;
   }

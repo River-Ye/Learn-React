@@ -13,8 +13,10 @@ module.exports = {
   mode: process.env.NODE_ENV,
   // TODO 1
   entry: {
-    /* index: ['./index.js'],
-    about: ['./about.js'], */
+    // /*
+    index: ['./index.js'],
+    about: ['./about.js'],
+    // */
   },
   devtool: DEV_MODE ? 'inline-source-map' : false,
   output: {
@@ -93,7 +95,9 @@ module.exports = {
   },
   plugins: [
     // TODO
-    /* new HtmlWebpackPlugin({
+    // /*
+    // 可用 JS 迴圈處理
+    new HtmlWebpackPlugin({
       template: './html/index.pug',
       filename: 'index.html',
       chunks: ['vendors', 'index'],
@@ -102,7 +106,8 @@ module.exports = {
       template: './html/about.pug',
       filename: 'about.html',
       chunks: ['vendors', 'about'],
-    }), */
+    }),
+    // */
     new MiniCssExtractPlugin({
       filename: DEV_MODE ? '[name].css' : '[name]-[contenthash].css',
     }),
@@ -116,6 +121,7 @@ module.exports = {
   ],
   devServer: {
     before(app, server) {;
+      // webpack 對 HTML 檔沒提供 hot reload 和 live reload
       // hot reload for html, pug
       chokidar.watch('src/html/**/*').on('all', () => {
         server.sockWrite(server.sockets, 'content-changed');

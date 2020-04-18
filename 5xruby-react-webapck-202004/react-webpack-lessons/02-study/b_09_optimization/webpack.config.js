@@ -15,7 +15,7 @@ module.exports = {
   },
   devtool: DEV_MODE ? 'inline-source-map' : false,
   output: {
-    // TODO
+    // TODO: 1
     filename: DEV_MODE ? '[name].js' : '[name]-[chunkhash].js',
     chunkFilename: DEV_MODE ? '[name]-chunk.js' : '[name]-chunk-[chunkhash].js',
     path: path.resolve('dist'),
@@ -27,7 +27,7 @@ module.exports = {
     ],
     // TODO: 2 start
     alias: {
-      // '@': path.resolve('src'),
+      '@': path.resolve('src'),   // 工作上很常做這設定，從專案 src 開始往裡面找
     },
     // TODO: 2 end
   },
@@ -119,19 +119,21 @@ module.exports = {
   // TODO: 1 start
   optimization: {
     // https://webpack.js.org/plugins/split-chunks-plugin/#optimizationsplitchunks
-    /* splitChunks: {
+    // /*
+    splitChunks: {
       chunks: 'all',
       cacheGroups: {
         vendors: {
           name: 'vendors',
           chunks: 'all',
           test: /[\\/]node_modules[\\/]/,
-          priority: 10,
+          priority: 10, // 權重比
           // https://webpack.js.org/plugins/split-chunks-plugin/#splitchunkscachegroupscachegroupenforce
           enforce: true,
         },
       },
-    }, */
+    },
   },
+  // */
   // TODO: 1 end
 };
