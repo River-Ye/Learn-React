@@ -7,13 +7,19 @@ class Modal extends React.Component {
     this.el = document.createElement('div');
   }
 
+  // 滑鼠事件會有氣泡流
   modalClickHandler = (e) => {
+    console.log(e.target);
+    console.log(e.currentTarget);
     // TODO 1
     /*  
     if (e.target === e.currentTarget) {
       this.props.onClose();
     }
     // */
+    if (e.target === e.currentTarget){
+      this.props.onClose();
+    }
   }
 
   keydownHandler =(e)=>{
@@ -23,18 +29,23 @@ class Modal extends React.Component {
       this.props.onClose();
     }
     // */
+    if(e.keyCode === 27){ // ESC
+      this.props.onClose();
+    }
   }
 
   componentDidMount() {
     modalRoot.appendChild(this.el);
     // TODO 2
     // window.addEventListener('keydown', this.keydownHandler);
+    window.addEventListener('keydown', this.keydownHandler);
   }
 
   componentWillUnmount() {
     modalRoot.removeChild(this.el);
     // TODO 2
     // window.removeEventListener('keydown', this.keydownHandler);
+    window.removeEventListener('keydown', this.keydownHandler);
   }
 
   render() {
