@@ -6,6 +6,8 @@ const path = require('path');
 const DEV_MODE = process.env.NODE_ENV === 'development';
 console.log('process.env.NODE_ENV', process.env.NODE_ENV);
 
+var isStage =  process.env.APP_ENV === 'stage';
+
 module.exports = {
   // mode 一定要加，只能是 development 或是 production 兩種
   // TODO
