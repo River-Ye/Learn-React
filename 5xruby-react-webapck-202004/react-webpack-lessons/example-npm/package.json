@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.5.0"
+  },
+  "devDependencies": {
+    "react": "^16.13.1"
   }
 }
