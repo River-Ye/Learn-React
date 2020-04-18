@@ -33,7 +33,12 @@ class App extends React.Component {
         <MyPopup onClose={this.onCloseHandler} />
       </Modal>
     )
-    // */
+    */
+   return (
+     <Modal onClose={this.onCloseHandler}>
+       <MyPopup onClose={this.onCloseHandler} />
+     </Modal>
+   )
   }
   render() {
     var { showModal } = this.state;

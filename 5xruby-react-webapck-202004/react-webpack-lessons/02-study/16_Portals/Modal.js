@@ -3,6 +3,7 @@ const modalRoot = document.getElementById('modal');
 class Modal extends React.Component {
   constructor(props) {
     super(props);
+    // 為何不直接塞 state，自訂變數不需要被data更改時，可用自訂的，有需要被變動才用 state
     this.el = document.createElement('div');
   }
 
