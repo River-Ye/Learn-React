@@ -17,7 +17,7 @@ module.exports = {
     filename: DEV_MODE ? '[name].js' : '[name]-[chunkhash].js',
     chunkFilename: DEV_MODE ? '[name]-chunk.js' : '[name]-chunk-[chunkhash].js',
     // TODO
-    publicPath: '/',
+    publicPath: '/', // 走絕對路徑
     path: path.resolve('dist'),
   },
   resolve: {

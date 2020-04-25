@@ -1,4 +1,4 @@
-/*
+// /*
 function delay(name) {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -9,7 +9,7 @@ function delay(name) {
 function throwError() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      reject(new Error('Promise error'));
+      reject(new Error('Promise error tttt')); // 不成文規定，要加 Error 類別
     }, 1000);
   });
 }
@@ -27,8 +27,8 @@ function init2() {
       console.log('complete');
     })
     .catch((error) => {
-      console.log(error.message);
+      console.error(error.message);
     });
 }
 init2();
-*/
+// */

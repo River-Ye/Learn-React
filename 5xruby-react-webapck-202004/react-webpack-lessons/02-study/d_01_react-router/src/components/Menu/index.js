@@ -6,7 +6,7 @@ export default function Menu() {
   // TODO
   return (
     <nav>
-      {/* 
+
       <ul className="menu">
         <li className="menu-item">
           <NavLink to="/" exact>Home</NavLink>
@@ -14,9 +14,8 @@ export default function Menu() {
         <li className="menu-item">
           <NavLink to="/video">Videos</NavLink>
         </li>
-      </ul> 
-      */}
+      </ul>
+
     </nav>
   );
-  
 }

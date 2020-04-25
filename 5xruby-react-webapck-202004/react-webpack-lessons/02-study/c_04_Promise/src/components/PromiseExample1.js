@@ -1,4 +1,4 @@
-/*
+// *
 function delay(name) {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -21,4 +21,4 @@ function init() {
     });
 }
 init();
-*/
+// */

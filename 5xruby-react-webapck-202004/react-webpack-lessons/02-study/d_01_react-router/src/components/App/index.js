@@ -9,7 +9,7 @@ import Overlay from '../Overlay';
 
 export default function App() {
   // TODO
-  /*
+  // /*
   return (
     <Router>
       <div className="app">
@@ -22,5 +22,5 @@ export default function App() {
       </div>
     </Router>
   );
-  */
+  // */
 }

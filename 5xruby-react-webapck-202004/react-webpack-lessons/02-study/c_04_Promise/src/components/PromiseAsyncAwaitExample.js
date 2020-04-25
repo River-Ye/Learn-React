@@ -1,5 +1,5 @@
 // https://babeljs.io/docs/en/babel-plugin-transform-runtime
-/*
+//* 
 function delay(name) {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -37,4 +37,4 @@ async function init2() {
 
 init();
 // init2();
-*/
+// */

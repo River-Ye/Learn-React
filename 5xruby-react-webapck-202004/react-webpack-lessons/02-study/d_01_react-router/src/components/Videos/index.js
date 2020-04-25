@@ -14,7 +14,7 @@ const boxes = [
 
 export default function Videos() {
   // TODO
-  /*
+  // /*
   return (
     <div className="videos-root">
       <h2>Video</h2>

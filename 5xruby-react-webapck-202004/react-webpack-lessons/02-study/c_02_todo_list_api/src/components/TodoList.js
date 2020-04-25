@@ -14,7 +14,7 @@ export default class TodoList extends React.Component {
 
   // TODO: 3 start
   componentDidMount() {
-    /*
+    //*
     console.log('fetch list JSON Data');
     this.setState({ isLoading: true });
     axios.get(this.props.url).then((response) => {
@@ -23,13 +23,13 @@ export default class TodoList extends React.Component {
         isLoading: false,
       });
     });
-    */
+    //* /
   }
   // TODO: 3 end
 
   // TODO: 4 start
   addItem = (text) => {
-    /*
+    // /*
     this.setState({ isLoading: true });
     axios({
       method: 'POST',
@@ -45,14 +45,14 @@ export default class TodoList extends React.Component {
           isLoading: false,
         }));
       });
-    */
+    // */
   }
   // TODO: 4 end
 
   // TODO: 5 start
   toggleItem = (id) => {
     // api 成功會回傳 [{id,text,done}]
-    /*
+    // /*
     this.setState({ isLoading: true });
     axios({
       method: 'PUT',
@@ -66,7 +66,7 @@ export default class TodoList extends React.Component {
           isLoading: false,
         });
       });
-    */
+    // */
   }
   // TODO: 5 end
 
@@ -74,6 +74,8 @@ export default class TodoList extends React.Component {
     const { isLoading, list } = this.state;
     const clazz = classnames('todo-list', {
       'is-loading': isLoading,
+      aaa: true,
+      bbb: false,
     });
     return (
       <div className={clazz}>

@@ -1,4 +1,4 @@
-/*
+// /*
 function delay(name, time) {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -7,7 +7,7 @@ function delay(name, time) {
   });
 }
 function init() {
-  Promise.all([
+  Promise.all([ // .all 這三個 API 都完成後，才走下一步
     delay('1', 1000),
     delay('2', 2000),
     delay('3', 1500),
@@ -16,7 +16,7 @@ function init() {
       console.log(results);
     });
 
-  Promise.race([
+  Promise.race([ // .race 其中一個完成，就走下一步
     delay('1', 1000),
     delay('2', 2000),
     delay('3', 1500),
@@ -27,4 +27,4 @@ function init() {
 }
 
 init();
-*/
+// */
