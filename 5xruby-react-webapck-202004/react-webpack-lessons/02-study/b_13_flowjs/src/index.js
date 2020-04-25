@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'development') {
   require('!!raw-loader!../src/html/index.pug');
 }
 // TODO
-/* console.log(add(1, 1));
+//* console.log(add(1, 1));
 
 console.log(add('a', 'b'));
 

@@ -12,6 +12,7 @@ module.exports = {
   // globals 變數，一般指的都是 windows.xxx 變數
   globals: {
     $: 'readonly',
+    gtag: 'readonly',
   },
   // https://eslint.org/docs/user-guide/configuring
   parserOptions: {
@@ -27,6 +28,8 @@ module.exports = {
     },
   },
   rules: {
+    'func-names': 0,
+    'no-console': 0,
     'import/no-extraneous-dependencies': 0,
     'import/prefer-default-export': 0,
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],

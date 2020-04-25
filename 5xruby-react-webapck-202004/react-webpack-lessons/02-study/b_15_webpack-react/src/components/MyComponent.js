@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
 // TODO
-/*
+//*
 interface Props {
   count: number;
   onClick: ()=> void;
 }
 
-interface Data {
+interface State {
   name: string;
 }
 
 
-export default class MyComponent extends Component<Props, Data> {
+export default class MyComponent extends Component<Props, State> {
   state = {
     name: 'milkmidi',
   }
