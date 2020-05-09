@@ -1,13 +1,12 @@
 import { connect } from 'react-redux';
 import MyCount from '@/components/MyCount';
 
-
 function mapStateToProps(state) {
-  /*
+  // /*
   return {
     count: state.count,
   };
-  */
+  // */
 }
 function mapDispatchToProps() {
   return {
@@ -15,4 +14,4 @@ function mapDispatchToProps() {
   };
 }
 
-// export default connect(mapStateToProps, mapDispatchToProps)(MyCount);
+export default connect(mapStateToProps, mapDispatchToProps)(MyCount);

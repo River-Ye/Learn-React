@@ -1,5 +1,6 @@
-export default function count(state = 0, action) {
-  /*
+export default function count(state = 20, action) {
+  // /*
+  console.log(action.type);
   switch (action.type) {
     case 'INCREASE': {
       return state + 1;
@@ -7,7 +8,7 @@ export default function count(state = 0, action) {
     case 'DECREASE':
       return state - 1;
     default:
-      return state;
+      return state; // 這段一定要加
   }
-  */
+  // */
 }

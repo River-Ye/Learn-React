@@ -5,12 +5,12 @@ import { Provider } from 'react-redux';
 import reducer from './reducers';
 
 /* eslint-disable no-underscore-dangle */
-/** let preloadedState = null;
+// /** let preloadedState = null;
 if (process.env.NODE_ENV === 'development') {
   preloadedState = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 }
 const store = createStore(reducer, preloadedState);
-*/
+// */
 /* eslint-enable */
 
 

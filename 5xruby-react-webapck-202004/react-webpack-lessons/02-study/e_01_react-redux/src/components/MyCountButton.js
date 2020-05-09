@@ -7,7 +7,7 @@ function MyCountButton(props) {
       <h3>MyCountButton</h3>
       Count: {props.count}
       <button onClick={props.onIncrease}>+</button>
-      <button onClick={props.onDecrease}>+</button>
+      <button onClick={props.onDecrease}>-</button>
     </section>
   );
 }

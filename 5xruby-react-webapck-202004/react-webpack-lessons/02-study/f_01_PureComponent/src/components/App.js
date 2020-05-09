@@ -29,8 +29,8 @@ export default class App extends React.Component {
         <Example2ComponentExample />
         <Example3PureComponentExample />
         <Example4PropsRenderExample label={label} onClick={this.onIncrement} />
-        <Example4PropsRenderPureExample label={label} onClick={this.onIncrement} />
-        <Example4PropsRenderPureExample label={label} onClick={() => this.onIncrement()} />
+        <Example4PropsRenderPureExample label={label} onClick={this.onIncrement} /> {/* 效能會比較好，但如果要傳參數的話，才改用33行寫法 */}
+        <Example4PropsRenderPureExample label={label} onClick={() => this.onIncrement()} /> {/* 不建議這麼寫，效能會比較差，除非要傳參數 */}
         <Example5MemoStatelessComponent label={label} />
       </div>
     );

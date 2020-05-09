@@ -10,7 +10,7 @@ function MyCount(props) {
   );
 }
 
-MyCount.propTypes = {
+MyCount.propTypes = { // 官方邊準寫法，定義型別
   count: PropTypes.number.isRequired,
 };
 
