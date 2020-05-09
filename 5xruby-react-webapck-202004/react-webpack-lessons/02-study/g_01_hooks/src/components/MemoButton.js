@@ -1,11 +1,11 @@
 import React, { memo, useRef, useEffect } from 'react';
 
 const MemoButton = memo(({ children, onClick }) => {
-  /*
+  // /*
   const refCount = useRef(0);
-  refCount.current += 1;
   const refMemoTipEl = useRef(null);
   useEffect(() => {
+    refCount.current += 1;
     TweenMax.fromTo(
       refMemoTipEl.current,
       0.35,
@@ -22,6 +22,6 @@ const MemoButton = memo(({ children, onClick }) => {
       <button onClick={onClick}>{children}</button>
     </div>
   );
-  */
+  // */
 });
 export default MemoButton;

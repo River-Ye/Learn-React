@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 
-/*
+// /*
 const initialState = { count: 0 };
 
 function reducer(state, action) {
@@ -15,13 +15,13 @@ function reducer(state, action) {
       return state;
   }
 }
-*/
+// */
 
 export default function Hooks5() {
-  // const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    /*
+    // /*
     <section>
       <h1>Hooks5 useReducer</h1>
       Count: {state.count}
@@ -35,6 +35,6 @@ export default function Hooks5() {
         <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
       </p>
     </section>
-    */
+    // */
   );
 }

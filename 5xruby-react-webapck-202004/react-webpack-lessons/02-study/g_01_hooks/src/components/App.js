@@ -17,15 +17,15 @@ export default function App() {
   return (
     <div className="app">
       <Hooks0 />
-      {/* <Hooks1 /> */}
-      {/* <Hooks2 /> */}
-      {/* <Hooks3 /> */}
-      {/* <Hooks4 /> */}
-      {/* <Hooks5 /> */}
-      {/* <Hooks6 /> */}
-      {/* <Hooks7 /> */}
-      {/* <Hooks8 /> */}
-      {/* <Hooks9 /> */}
+      <Hooks1 />
+      <Hooks2 />
+      <Hooks3 />
+      <Hooks4 />
+      <Hooks5 />
+      <Hooks6 />
+      <Hooks7 />
+      <Hooks8 />
+      <Hooks9 />
     </div>
   );
 }

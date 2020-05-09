@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 export default function Hooks6() {
-  // const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-  /*
+  // /*
   useEffect(() => {
     const intervalId = setInterval(() => {
-      // console.log('Hooks7', count);
+      console.log('Hooks7', count);
       // wrong
       // setCount(count + 1);
 
@@ -16,7 +16,7 @@ export default function Hooks6() {
 
     return () => clearInterval(intervalId);
   }, []);
-  */
+  // */
 
   return (
     <section>

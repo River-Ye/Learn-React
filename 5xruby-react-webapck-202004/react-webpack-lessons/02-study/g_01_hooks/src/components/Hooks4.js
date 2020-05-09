@@ -11,7 +11,7 @@ const computeExpensiveValue = (value:number):number => {
 
 
 export default function HooksExample() {
-  /* 
+  // /* 
   const [count, setCount] = React.useState(0);
   const [count2, setCount2] = React.useState(0);
 

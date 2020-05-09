@@ -7,7 +7,7 @@ const getWindowSize = () => ({
 });
 export default function useWindowSize() {
   // TODO
-  /*
+  // /*
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
   useEffect(() => {
@@ -15,6 +15,9 @@ export default function useWindowSize() {
       setWindowSize(getWindowSize());
     };
     window.addEventListener('resize', handleResize);
+    // return function (){
+    //   console.log('123');
+    // }
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
@@ -28,7 +31,7 @@ export function useWindowSizeDebounce(wait = 500) {
   useEffect(() => {
     // https://lodash.com/docs/#debounce
     // http://demo.nimius.net/debounce_throttle/
-    const handleResize = debounce(() => {
+    const handleResize = debounce(() => { // 節流
       setWindowSize(getWindowSize());
     }, wait);
     window.addEventListener('resize', handleResize);

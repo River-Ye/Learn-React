@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 
 import Checkbox from './index';
 
-/*
+// /*
 const customAction = (e) => {
   const { checked, value } = e.target;
   action('onChange')(`${checked},${value}`);
@@ -24,4 +24,4 @@ storiesOf('Checkbox', module)
   .add('disabled', () => (
     <Checkbox disabled value="react" text="disabled" onChange={customAction} />
   ));
-*/
+// */

@@ -5,6 +5,7 @@ module.exports = {
   },
   parser: 'babel-eslint',
   globals: {
+    TweenMax: false,
   },
   settings: {
     'import/resolver': {

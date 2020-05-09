@@ -3,10 +3,10 @@ import MemoButton from './MemoButton';
 // https://github.com/facebook/react/blob/master/packages/react/src/ReactHooks.js#L112
 
 export default function Hooks7() {
-  // const [count, setCount] = useState(0);
-  // const [count2, setCount2] = useState(0);
+  const [count, setCount] = useState(0);
+  const [count2, setCount2] = useState(0);
 
-  /*
+  // /*
   const incrementCallback = () => {
     setCount(count + 1);
   };
@@ -23,7 +23,7 @@ export default function Hooks7() {
   const incrementMemoizedCallback3 = useCallback(() => {
     setCount(count + 1);
   });
-  */
+  // */
   return (
     <section>
       <h1>Hooks7 useCallback</h1>

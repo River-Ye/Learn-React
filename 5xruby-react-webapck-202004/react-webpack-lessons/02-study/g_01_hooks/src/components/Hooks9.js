@@ -46,7 +46,7 @@ const useFetchList = () => {
   const [lists, setLists] = useState([]);
 
   // TODO
-  /*
+  // /*
   useEffect(() => {
     let cancel = null;
     axios.get('/api/list/all?delay=1500', {
